@@ -1,0 +1,32 @@
+[
+  {
+    "task": "List three search queries to find cloud computing market data",
+    "expected_complexity": "low",
+    "expected_reasoning": "low"
+  },
+  {
+    "task": "Summarise the key benefits of cloud computing for a small business",
+    "expected_complexity": "low",
+    "expected_reasoning": "low"
+  },
+  {
+    "task": "Compare AWS, Azure, and GCP across pricing, scalability, and AI services",
+    "expected_complexity": "medium",
+    "expected_reasoning": "medium"
+  },
+  {
+    "task": "Analyze whether the Indian AI customer-support market represents a viable opportunity given competitive dynamics, regulation, and pricing pressure",
+    "expected_complexity": "high",
+    "expected_reasoning": "high"
+  },
+  {
+    "task": "Assess whether the ML paper's training methodology is reproducible given the described dataset, architecture, and evaluation setup",
+    "expected_complexity": "high",
+    "expected_reasoning": "high"
+  },
+  {
+    "task": "Identify conflicting architectural recommendations across the five provided technical documents",
+    "expected_complexity": "high",
+    "expected_reasoning": "high"
+  }
+]
