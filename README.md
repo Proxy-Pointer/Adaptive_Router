@@ -35,33 +35,33 @@
 
 ```mermaid
 flowchart TD
-    User(["<b>🧑‍💻 User</b>"]) -->|"<b>Query</b>"| UI["<b>React Frontend</b>"]
-    UI -->|"<b>SSE Stream</b>"| API["<b>FastAPI Backend</b>"]
+    User(["🧑‍💻 User"]) -->|Query| UI["React Frontend"]
+    UI -->|SSE Stream| API["FastAPI Backend"]
 
-    subgraph "<b>Multi-Agent Pipeline</b>"
+    subgraph Multi-Agent Pipeline
         direction LR
-        R["<b>Researcher</b>"] --> A["<b>Analyst</b>"] --> C["<b>Critic</b>"] --> Rep["<b>Reporter</b>"]
+        R["Researcher"] --> A["Analyst"] --> C["Critic"] --> Rep["Reporter"]
     end
 
     API --> R
-    R & A & C & Rep -.->|"<b>active agent</b>"| AgentActive["<b>Active Agent</b>"]
+    R & A & C & Rep -.->|active agent| AgentActive["Active Agent"]
 
-    AgentActive -->|"<b>Generates sub-tasks</b><br/><i>via router proxy</i>"| Plan["<b>Agent Sub-tasks</b>"]
+    AgentActive -->|"Generates sub-tasks via router proxy"| Plan["Agent Sub-tasks"]
 
-    subgraph "<b>🧭 Adaptive Router — Gemini Flash Lite</b>"
+    subgraph "🧭 Adaptive Router — Gemini Flash Lite"
         direction TB
-        Classify["<b>Task Classification</b><br/><i>complexity · reasoning · context size</i>"]
-        Classify --> Score["<b>Score 0–6</b>"]
-        Score --> RouterDec{{"<b>Router Decision</b>"}}
+        Classify["Task Classification\ncomplexity · reasoning · context size"]
+        Classify --> Score["Score 0–6"]
+        Score --> RouterDec{{"Router Decision"}}
     end
 
     Plan --> Classify
 
-    RouterDec -->|"<b>0–2</b>"| Fast["<b>⚡ FAST Tier</b>"]
-    RouterDec -->|"<b>3–4</b>"| Balanced["<b>⚖️ BALANCED Tier</b>"]
-    RouterDec -->|"<b>5–6</b>"| Powerful["<b>🔥 POWERFUL Tier</b>"]
+    RouterDec -->|0–2| Fast["⚡ FAST Tier"]
+    RouterDec -->|3–4| Balanced["⚖️ BALANCED Tier"]
+    RouterDec -->|5–6| Powerful["🔥 POWERFUL Tier"]
 
-    Fast & Balanced & Powerful --> Summary["<b>Cost Summary<br/>& Savings Report</b>"]
+    Fast & Balanced & Powerful --> Summary["Cost Summary & Savings Report"]
 ```
 
 ---
