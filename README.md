@@ -74,11 +74,11 @@ $$
 \text{Routing Score} = \text{Complexity} + \text{Reasoning} + \text{Context Size}
 $$
 
-| Metric               | Score 0     | Score 1        | Score 2      |
-| :------------------- | :---------- | :------------- | :----------- |
-| **Complexity** | Low         | Medium         | High         |
-| **Reasoning**  | Low         | Medium         | High         |
-| **Context**    | < 2k tokens | 2k–6k tokens  | > 6k tokens  |
+| Metric               | Score 0     | Score 1       | Score 2     |
+| :------------------- | :---------- | :------------ | :---------- |
+| **Complexity** | Low         | Medium        | High        |
+| **Reasoning**  | Low         | Medium        | High        |
+| **Context**    | < 2k tokens | 2k–6k tokens | > 6k tokens |
 
 ### Tier Thresholds
 
@@ -219,8 +219,19 @@ In a real production pipeline, agents execute tasks and produce real text — yo
 **Why does the Reporter exclude the Researcher's raw data?**
 By the time the Reporter runs, the Analyst and Critic have distilled raw findings into structured conclusions. Passing unprocessed search data to a formatting step inflates context costs needlessly.
 
+
+
+## Author
+
+**Partha Sarkar**
+
+## Contact
+
+- **GitHub Issues**: For bug reports.
+- **General Questions**: For general questions, ideas, and enhancement requests, reach out to me on [LinkedIn](https://www.linkedin.com/in/partha-sarkar-lets-talk-ai) or [Email](mailto:partha.sarkarx@gmail.com).
+
 ---
 
-## 📄 License
+## License
 
-MIT License — see [LICENSE](LICENSE) for details.
+© 2026 Partha Sarkar. Licensed under [MIT](./LICENSE)
